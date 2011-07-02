@@ -29,3 +29,14 @@ all :
 	latex thesis.tex
 	dvips thesis.dvi
 	ps2pdf thesis.ps
+clean:
+	rm -f *.aux
+	rm -f *.bbl
+	rm -f *.blg
+	rm -f *.lof
+	rm -f *.log
+	rm -f *.lot
+	rm -f *.dvi
+	rm -f *.pdf
+	rm -f *.ps
+	rm -f *.toc

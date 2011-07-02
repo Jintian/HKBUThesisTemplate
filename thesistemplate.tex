@@ -1,12 +1,25 @@
+\usepackage{srcltx}
+\usepackage{epsfig}
+\usepackage{graphicx,amssymb,amsmath,amsthm}
+\usepackage{graphicx,color,enumerate}
+\usepackage[rflt]{floatflt}
+\usepackage{rotating}
+\usepackage{caption2}
+\usepackage{cases}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{pstricks}
+
+
 \topmargin 20mm      % the top margin is not less than 2 cm
 \textheight 24.0cm
 \textwidth 150mm
-%the following sentence should be replaced by the above one when to submit the thesis
 \oddsidemargin 35mm    % the binding margin is not less than 3.5 cm
 \evensidemargin 25mm
+%\evensidemargin 35mm
 
 \headsep 0in
-
 \voffset -28mm
 \hoffset -25.4mm
 
@@ -19,7 +32,8 @@
 \def\supervisor#1{\def\nsupervisor{#1}}
 \def\degree#1{\def\ndegree{#1}}
 \def\date#1{\def\ndate{#1}}
-\newcommand{\Thesistitle}{
+\newcommand{\Thesistitle}
+{
 \newpage
 \null\vspace*{0.5in}
 \begin{center}
@@ -48,10 +62,12 @@
 }
 
 
-\newcommand{\thesis}{
+\newcommand{\thesis}
+{
 \newpage
 \pagenumbering{arabic} \setcounter{chapter}{0}
-\setcounter{section}{0} \setcounter{page}{1} }
+\setcounter{section}{0} \setcounter{page}{1} 
+}
 
 \makeatletter
 \renewcommand*\l@chapter[2]{%
@@ -95,19 +111,6 @@
     \makeatother
 
 
-    \usepackage{srcltx}
-    \usepackage{epsfig}
-    \usepackage{graphicx,amssymb,amsmath,amsthm}
-    \usepackage{graphicx,color,enumerate}
-    \usepackage[rflt]{floatflt}
-    \usepackage{rotating}
-    \usepackage{caption2}
-    %\usepackage{overciteb}
-    \usepackage{cases}
-    \usepackage{mathrsfs}
-    \usepackage{amsfonts}
-    \usepackage{multicol}
-    \usepackage{pstricks}
 
     \newtheorem{theorem}{Theorem}[section]
     \newtheorem{lemma}[theorem]{Lemma}
