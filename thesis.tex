@@ -1,0 +1,83 @@
+\documentclass[12pt,twoside]{report}
+\input{thesistemplate}
+
+\begin{document}
+\pagestyle{plain}
+\author{xxx xxx}
+\supervisor{Professor xxx xxx }
+
+\title{Thesis title}
+\degree{\bf Doctor of Philosophy}
+\date{\bf August 20xx}
+\Thesistitle % show the first page.
+
+
+\newpage
+\setcounter{page}{1}
+
+\chapter*{\centerline{ Declaration}}
+
+I declare that this thesis has been composed by myself under the guidance of my principal supervisor professor xxx and 
+co-supervisor professor xxx.
+The thesis has not previously included in any thesis, dissertation or report submitted to any institution for a degree,
+diploma or other qualification. All sources of information have been acknowledged by means of references to the relevant publications.
+
+\vskip 1cm
+
+\hfill Signature:$\underline{\hspace{4cm}}$
+
+\hfill August 20xx ~~~~~~~~~~~~~~~~~~~~~~~~~
+\addcontentsline{toc}{chapter}{Declaration}
+\newpage
+\addcontentsline{toc}{chapter}{\bf Abstract}
+\chapter*{\centerline{ Abstract}}
+blabla \dots
+
+\vspace{1cm}
+
+\noindent {\bf Keywords:} keyword1, keyword2, keyword3, \dots
+
+\newpage
+\addcontentsline{toc}{chapter}{\bf Acknowledgements}
+\chapter*{\centerline{Acknowledgements}}
+Thank your supervisors.
+
+Thank your colleagues.
+
+Thank your family.
+
+\newpage % Use this part to insert the table of contents
+\addcontentsline{toc}{chapter}{Table of Contents}
+\tableofcontents
+
+\newpage % Use this part to insert the list of table.
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\newpage % Use this part to insert the list of figure.
+\addcontentsline{toc}{chapter}{List of Figures} \listoffigures
+
+\thesis % This command is used to set the page number.
+\newpage
+
+
+\chapter{xxxx}
+\input{chapter1}
+
+\chapter{xxxx}
+\input{chapter2}
+
+
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{abbrv}
+\bibliography{thesis}
+
+
+
+\newpage
+\addcontentsline{toc}{chapter}{Curriculum Vitae}
+\input cv.tex
+
+\end{document}
